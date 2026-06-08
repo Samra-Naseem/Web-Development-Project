@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="UTF-8">
+  <meta name="description" content="Samra">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Samra">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
+  <script src="Functionality.js">
+  	
+  </script>
+</head>
+<body>
+	<div class="left"></div>
+	<div class="Answer-Div">
+		<div class="Output-Div">
+			<form>
+				<label id="First"></label><br>
+				<label id="Second"></label>
+				<label id="Op"></label>
+				<input type="text" name="" id="ans" readonly="">
+			</form>
+		</div>
+			<div class="Calculator-Div">
+				<form>
+					<!--first line-->
+					<button type="button" onclick="Clear();">AC </button>
+					<button type="button" onclick="Reset();">CE </button>
+					<button type="button" onclick="Operater('%');">% </button>
+					<button type="button" onclick="Operater('÷');"> ÷</button>
+					<!--second line-->
+					<button type="button" onclick="Operater('×');">×</button>
+					<button type="button" onclick="FetchNumber(9); ">9</button>
+					<button type="button" onclick="FetchNumber(8); ">8</button>
+					<button type="button" onclick="FetchNumber(7);">7</button>
+					<!--3rd line-->
+					<button type="button" onclick="FetchNumber(6); ">6</button>
+					<button type="button" onclick="Operater('-');">-</button>
+					<button type="button" onclick="FetchNumber(5); ">5</button>
+					<button type="button" onclick="FetchNumber(4); ">4</button>
+					<!--//4th line-->
+					<button type="button" onclick="FetchNumber(3); ">3</button>
+					<button type="button" onclick="FetchNumber(2); ">2</button>
+					<button type="button" onclick="Operater('+');">+</button>
+					<button type="button" onclick="FetchNumber(1); ">1 </button>
+					<!--//5th line-->
+					<button type="button" onclick="FetchNumber(0); ">0</button>
+					<button type="button" onclick="Delete();">Del</button>
+					<button type="button" onclick="Calc();"> = </button>
+				</form>
+			</div>
+	</div>
+	<div class="right"></div>
+</body>
+</html>
